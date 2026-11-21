@@ -73,7 +73,7 @@ $display = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 $path = "C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartUI.dll"
 
 if (Test-Path -LiteralPath $path) {
-    Write-Host (Get-Item -LiteralPath $path).VersionInfo.FileVersion
+    Write-Host (Get-Item -LiteralPath $path).VersionInfo.FileVersion.Split(' ')[0]
 } else {
     Write-Host "文件不存在"
 }
