@@ -186,9 +186,8 @@ def main():
 
     # 扫描空闲区
     candidates = []
-    for value, name in [(0xCC, "CC"), (0x00, "00")]:
-        for off, size in find_runs(data, start, end, value, MIN_RUN_SIZE):
-            candidates.append({"type": name, "off": off, "size": size})
+    for off, size in find_runs(data, start, end, 0xCC, MIN_RUN_SIZE):
+        candidates.append({"type": "CC", "off": off, "size": size})
 
     print(f"\n候选空闲区共 {len(candidates)} 个（>= {MIN_RUN_SIZE} 字节）")
 
