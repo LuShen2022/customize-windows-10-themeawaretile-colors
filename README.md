@@ -47,7 +47,7 @@ C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\St
 | --- | --- |
 | Windows | Windows 10 22H2 |
 | OS Build | 19045 |
-| StartUI.dll | v10.0.19041.5965 |
+| StartUI.dll | 10.0.19041.5965 |
 
 ### 查看 Windows 版本
 
